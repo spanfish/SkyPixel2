@@ -10,6 +10,6 @@
 
 @interface FirstViewController : UIViewController
 
-
+@property(nonatomic, weak) IBOutlet UIImageView *imageView;
 @end
 

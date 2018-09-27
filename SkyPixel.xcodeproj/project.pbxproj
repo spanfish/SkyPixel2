@@ -14,8 +14,31 @@
 		3361165A215CC2E700CD50C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33611659215CC2E700CD50C6 /* Assets.xcassets */; };
 		3361165D215CC2E700CD50C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3361165B215CC2E700CD50C6 /* LaunchScreen.storyboard */; };
 		33611660215CC2E700CD50C6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3361165F215CC2E700CD50C6 /* main.m */; };
+		33F4596E215CCB4F0048BC46 /* AuthViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F4596D215CCB4F0048BC46 /* AuthViewModel.m */; };
+		33F45971215CCB840048BC46 /* SignupViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F45970215CCB840048BC46 /* SignupViewModel.m */; };
+		33F45974215CCB910048BC46 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F45973215CCB910048BC46 /* LoginViewModel.m */; };
+		33F45984215CD0E80048BC46 /* AuthViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F45983215CD0E80048BC46 /* AuthViewModelTest.m */; };
+		33F45986215CD61C0048BC46 /* SignupViewModelTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F45985215CD61C0048BC46 /* SignupViewModelTest.m */; };
+		33F45988215CDD820048BC46 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 33F45987215CDD820048BC46 /* a.png */; };
+		33F4598C215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 33F4598B215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.m */; };
+		33F4598E215CE7A40048BC46 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4598D215CE7A40048BC46 /* libAFNetworking.a */; };
+		33F45990215CE7A40048BC46 /* libJSONModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4598F215CE7A40048BC46 /* libJSONModel.a */; };
+		33F45992215CE7A40048BC46 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45991215CE7A40048BC46 /* libMasonry.a */; };
+		33F45994215CE7A40048BC46 /* libPods-SkyPixel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45993215CE7A40048BC46 /* libPods-SkyPixel.a */; };
+		33F45996215CE7A40048BC46 /* libReactiveObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45995215CE7A40048BC46 /* libReactiveObjC.a */; };
+		33F45998215CE7A40048BC46 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45997215CE7A40048BC46 /* libSVProgressHUD.a */; };
 		6E715378BA3B78F063D009F7 /* libPods-SkyPixel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 810C3DCD23463F5B9E862D0D /* libPods-SkyPixel.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33F4597E215CD0010048BC46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33611642215CC2E500CD50C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33611649215CC2E500CD50C6;
+			remoteInfo = SkyPixel;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3361164A215CC2E500CD50C6 /* SkyPixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyPixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +53,25 @@
 		3361165C215CC2E700CD50C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3361165E215CC2E700CD50C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3361165F215CC2E700CD50C6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		33F4596C215CCB4F0048BC46 /* AuthViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthViewModel.h; sourceTree = "<group>"; };
+		33F4596D215CCB4F0048BC46 /* AuthViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewModel.m; sourceTree = "<group>"; };
+		33F4596F215CCB840048BC46 /* SignupViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewModel.h; sourceTree = "<group>"; };
+		33F45970215CCB840048BC46 /* SignupViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignupViewModel.m; sourceTree = "<group>"; };
+		33F45972215CCB910048BC46 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		33F45973215CCB910048BC46 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		33F45979215CD0010048BC46 /* SkyPixelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyPixelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F4597D215CD0010048BC46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F45983215CD0E80048BC46 /* AuthViewModelTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewModelTest.m; sourceTree = "<group>"; };
+		33F45985215CD61C0048BC46 /* SignupViewModelTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewModelTest.m; sourceTree = "<group>"; };
+		33F45987215CDD820048BC46 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		33F4598A215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+RACSupport.h"; sourceTree = "<group>"; };
+		33F4598B215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+RACSupport.m"; sourceTree = "<group>"; };
+		33F4598D215CE7A40048BC46 /* libAFNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libAFNetworking.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F4598F215CE7A40048BC46 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F45991215CE7A40048BC46 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F45993215CE7A40048BC46 /* libPods-SkyPixel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-SkyPixel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F45995215CE7A40048BC46 /* libReactiveObjC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactiveObjC.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F45997215CE7A40048BC46 /* libSVProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libSVProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D07E627CEF9D58967ED69DB /* Pods-SkyPixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPixel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPixel/Pods-SkyPixel.debug.xcconfig"; sourceTree = "<group>"; };
 		810C3DCD23463F5B9E862D0D /* libPods-SkyPixel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SkyPixel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3690AAE93EE00F3E02590F4 /* Pods-SkyPixel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyPixel.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyPixel/Pods-SkyPixel.release.xcconfig"; sourceTree = "<group>"; };
@@ -41,6 +83,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E715378BA3B78F063D009F7 /* libPods-SkyPixel.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F45976215CD0010048BC46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F4598E215CE7A40048BC46 /* libAFNetworking.a in Frameworks */,
+				33F45990215CE7A40048BC46 /* libJSONModel.a in Frameworks */,
+				33F45992215CE7A40048BC46 /* libMasonry.a in Frameworks */,
+				33F45994215CE7A40048BC46 /* libPods-SkyPixel.a in Frameworks */,
+				33F45996215CE7A40048BC46 /* libReactiveObjC.a in Frameworks */,
+				33F45998215CE7A40048BC46 /* libSVProgressHUD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				3361164C215CC2E500CD50C6 /* SkyPixel */,
+				33F4597A215CD0010048BC46 /* SkyPixelTests */,
 				3361164B215CC2E500CD50C6 /* Products */,
 				20815E4EF60105CFAAB16E29 /* Pods */,
 				BD6BFF92AA3707DA9CE5F6E8 /* Frameworks */,
@@ -70,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3361164A215CC2E500CD50C6 /* SkyPixel.app */,
+				33F45979215CD0010048BC46 /* SkyPixelTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,6 +134,8 @@
 		3361164C215CC2E500CD50C6 /* SkyPixel */ = {
 			isa = PBXGroup;
 			children = (
+				33F45989215CE21E0048BC46 /* AFNetworking+RACSupport */,
+				33F4596B215CCB2F0048BC46 /* ViewModel */,
 				3361164D215CC2E500CD50C6 /* AppDelegate.h */,
 				3361164E215CC2E500CD50C6 /* AppDelegate.m */,
 				33611650215CC2E500CD50C6 /* FirstViewController.h */,
@@ -84,6 +143,7 @@
 				33611653215CC2E500CD50C6 /* SecondViewController.h */,
 				33611654215CC2E500CD50C6 /* SecondViewController.m */,
 				33611656215CC2E600CD50C6 /* Main.storyboard */,
+				33F45987215CDD820048BC46 /* a.png */,
 				33611659215CC2E700CD50C6 /* Assets.xcassets */,
 				3361165B215CC2E700CD50C6 /* LaunchScreen.storyboard */,
 				3361165E215CC2E700CD50C6 /* Info.plist */,
@@ -92,9 +152,47 @@
 			path = SkyPixel;
 			sourceTree = "<group>";
 		};
+		33F4596B215CCB2F0048BC46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				33F4596C215CCB4F0048BC46 /* AuthViewModel.h */,
+				33F4596D215CCB4F0048BC46 /* AuthViewModel.m */,
+				33F4596F215CCB840048BC46 /* SignupViewModel.h */,
+				33F45970215CCB840048BC46 /* SignupViewModel.m */,
+				33F45972215CCB910048BC46 /* LoginViewModel.h */,
+				33F45973215CCB910048BC46 /* LoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		33F4597A215CD0010048BC46 /* SkyPixelTests */ = {
+			isa = PBXGroup;
+			children = (
+				33F45985215CD61C0048BC46 /* SignupViewModelTest.m */,
+				33F45983215CD0E80048BC46 /* AuthViewModelTest.m */,
+				33F4597D215CD0010048BC46 /* Info.plist */,
+			);
+			path = SkyPixelTests;
+			sourceTree = "<group>";
+		};
+		33F45989215CE21E0048BC46 /* AFNetworking+RACSupport */ = {
+			isa = PBXGroup;
+			children = (
+				33F4598A215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.h */,
+				33F4598B215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.m */,
+			);
+			path = "AFNetworking+RACSupport";
+			sourceTree = "<group>";
+		};
 		BD6BFF92AA3707DA9CE5F6E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33F4598D215CE7A40048BC46 /* libAFNetworking.a */,
+				33F4598F215CE7A40048BC46 /* libJSONModel.a */,
+				33F45991215CE7A40048BC46 /* libMasonry.a */,
+				33F45993215CE7A40048BC46 /* libPods-SkyPixel.a */,
+				33F45995215CE7A40048BC46 /* libReactiveObjC.a */,
+				33F45997215CE7A40048BC46 /* libSVProgressHUD.a */,
 				810C3DCD23463F5B9E862D0D /* libPods-SkyPixel.a */,
 			);
 			name = Frameworks;
@@ -122,6 +220,24 @@
 			productReference = 3361164A215CC2E500CD50C6 /* SkyPixel.app */;
 			productType = "com.apple.product-type.application";
 		};
+		33F45978215CD0010048BC46 /* SkyPixelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F45980215CD0010048BC46 /* Build configuration list for PBXNativeTarget "SkyPixelTests" */;
+			buildPhases = (
+				33F45975215CD0010048BC46 /* Sources */,
+				33F45976215CD0010048BC46 /* Frameworks */,
+				33F45977215CD0010048BC46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33F4597F215CD0010048BC46 /* PBXTargetDependency */,
+			);
+			name = SkyPixelTests;
+			productName = SkyPixelTests;
+			productReference = 33F45979215CD0010048BC46 /* SkyPixelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -133,6 +249,10 @@
 				TargetAttributes = {
 					33611649215CC2E500CD50C6 = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					33F45978215CD0010048BC46 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 33611649215CC2E500CD50C6;
 					};
 				};
 			};
@@ -150,6 +270,7 @@
 			projectRoot = "";
 			targets = (
 				33611649215CC2E500CD50C6 /* SkyPixel */,
+				33F45978215CD0010048BC46 /* SkyPixelTests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +283,14 @@
 				3361165D215CC2E700CD50C6 /* LaunchScreen.storyboard in Resources */,
 				3361165A215CC2E700CD50C6 /* Assets.xcassets in Resources */,
 				33611658215CC2E600CD50C6 /* Main.storyboard in Resources */,
+				33F45988215CDD820048BC46 /* a.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F45977215CD0010048BC46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,14 +340,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F4598C215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				33F45971215CCB840048BC46 /* SignupViewModel.m in Sources */,
 				33611655215CC2E500CD50C6 /* SecondViewController.m in Sources */,
 				3361164F215CC2E500CD50C6 /* AppDelegate.m in Sources */,
 				33611660215CC2E700CD50C6 /* main.m in Sources */,
+				33F45974215CCB910048BC46 /* LoginViewModel.m in Sources */,
 				33611652215CC2E500CD50C6 /* FirstViewController.m in Sources */,
+				33F4596E215CCB4F0048BC46 /* AuthViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F45975215CD0010048BC46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F45986215CD61C0048BC46 /* SignupViewModelTest.m in Sources */,
+				33F45984215CD0E80048BC46 /* AuthViewModelTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33F4597F215CD0010048BC46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33611649215CC2E500CD50C6 /* SkyPixel */;
+			targetProxy = 33F4597E215CD0010048BC46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		33611656215CC2E600CD50C6 /* Main.storyboard */ = {
@@ -386,6 +536,44 @@
 			};
 			name = Release;
 		};
+		33F45981215CD0010048BC46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = SkyPixelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.SkyPixelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyPixel.app/SkyPixel";
+			};
+			name = Debug;
+		};
+		33F45982215CD0010048BC46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = SkyPixelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.SkyPixelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkyPixel.app/SkyPixel";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -403,6 +591,15 @@
 			buildConfigurations = (
 				33611664215CC2E700CD50C6 /* Debug */,
 				33611665215CC2E700CD50C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F45980215CD0010048BC46 /* Build configuration list for PBXNativeTarget "SkyPixelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F45981215CD0010048BC46 /* Debug */,
+				33F45982215CD0010048BC46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

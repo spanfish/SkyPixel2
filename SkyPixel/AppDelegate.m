@@ -7,9 +7,12 @@
 //
 
 #import "AppDelegate.h"
-
+#import "SignupViewModel.h"
+#import <ReactiveObjC.h>
 @interface AppDelegate ()
-
+{
+    SignupViewModel *viewModel;
+}
 @end
 
 @implementation AppDelegate
@@ -17,6 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    viewModel = [[SignupViewModel alloc] init];
+    [viewModel.signupCommand.executionSignals subscribeNext:^(RACSignal *signupSignal) {
+        // Log a message whenever we log in successfully.
+        [[signupSignal flatten] subscribeError:^(NSError * _Nullable error) {
+            NSLog(@"error");
+        }];
+        
+        [signupSignal subscribeNext:^(id  _Nullable x) {
+            NSLog(@"next");
+        }];
+        
+        [signupSignal  subscribeError:^(NSError  * _Nullable error) {
+            NSLog(@"error");
+        }];
+    }];
+    
+    [viewModel.signupCommand execute:nil];
+    
     return YES;
 }
 

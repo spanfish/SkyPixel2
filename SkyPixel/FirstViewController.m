@@ -7,16 +7,24 @@
 //
 
 #import "FirstViewController.h"
+#import <ReactiveObjC.h>
+#import "AuthViewModel.h"
 
 @interface FirstViewController ()
-
+{
+    AuthViewModel *m ;
+}
 @end
 
 @implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    m = [[AuthViewModel alloc] init];
+    
+    RAC(self.imageView, image) = [RACObserve(m, authImage) deliverOnMainThread];
+    [m loadAuthImage];
 }
 
 
