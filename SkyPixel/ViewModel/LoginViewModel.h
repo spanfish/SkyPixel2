@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveObjC.h>
 
 @interface LoginViewModel : NSObject
 
@@ -15,4 +16,8 @@
 @property(nonatomic, strong) NSString *userName;
 @property(nonatomic, strong) NSString *password;
 @property(nonatomic, strong) NSString *remembered;
+
+@property(nonatomic, strong) RACCommand *loginCommand;
+
+-(id) initWithEnabled:(RACSignal *) enabledSignal;
 @end

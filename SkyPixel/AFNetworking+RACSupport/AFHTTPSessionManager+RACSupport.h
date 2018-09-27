@@ -12,4 +12,6 @@
 
 -(RACSignal *_Nonnull) rac_Post:(NSString * _Nonnull )URLString
              parameters:(nullable id)parameters;
+-(RACSignal *_Nonnull) rac_Get:(NSString * _Nonnull )URLString
+                    parameters:(nullable id)parameters;
 @end

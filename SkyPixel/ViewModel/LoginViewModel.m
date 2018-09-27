@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewModel.h"
-#import <AFNetworking.h>
+#import "AFHTTPSessionManager+RACSupport.h"
 #import <ReactiveObjC.h>
 @implementation LoginViewModel
 
@@ -23,8 +23,44 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"Fail");
     }];
-    
-    RACSignal *s;
-    
 }
+
+-(id) initWithEnabled:(RACSignal *) enabledSignal {
+    self = [super init];
+    if(self) {
+        self.loginCommand = [[RACCommand alloc]  initWithEnabled:enabledSignal signalBlock:^RACSignal * _Nonnull(id  _Nullable sender) {
+            AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+            manager.responseSerializer = [AFJSONResponseSerializer serializer];
+            //manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", nil];
+            manager.requestSerializer = [AFJSONRequestSerializer serializer];
+            manager.requestSerializer.HTTPShouldHandleCookies = YES;
+            
+            NSDictionary *parameters = @{@"auth_code": self.authCode, @"password" : self.password, @"remembered" : @"false", @"user_name" : self.userName};
+            
+            //
+            return [[manager rac_Get:@"https://www.skypixel.com/api/v2/csrf-token?lang=en-US&platform=web&device=desktop" parameters:nil] concat:[manager rac_Post:@"https://www.skypixel.com/api/v2/account/login?lang=en-US&platform=web&device=desktop" parameters:parameters]];
+//            return [manager rac_Post:@"https://www.skypixel.com/api/v2/account/login?lang=en-US&platform=web&device=desktop" parameters:parameters];
+        }];
+        self.loginCommand.allowsConcurrentExecution = NO;
+    }
+    return self;
+}
+
+//-(id) init {
+//    self = [super init];
+//    if(self) {
+//        self.loginCommand = [[RACCommand alloc]  initWithSignalBlock:^RACSignal * _Nonnull(LoginViewModel *  _Nullable loginViewModel) {
+//            AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//            manager.responseSerializer = [AFJSONResponseSerializer serializer];
+//            //manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", nil];
+//            manager.requestSerializer = [AFJSONRequestSerializer serializer];
+//            
+//            NSDictionary *parameters = @{@"auth_code": loginViewModel.authCode, @"password" : loginViewModel.password, @"remembered" : @"false", @"user_name" : loginViewModel.userName};
+//            
+//            return [manager rac_Post:@"https://www.skypixel.com/api/v2/account/login?lang=en-US&platform=web&device=desktop" parameters:parameters];
+//        }];
+//        self.loginCommand.allowsConcurrentExecution = NO;
+//    }
+//    return self;
+//}
 @end

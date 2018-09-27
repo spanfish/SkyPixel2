@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		3361164F215CC2E500CD50C6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3361164E215CC2E500CD50C6 /* AppDelegate.m */; };
 		33611652215CC2E500CD50C6 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33611651215CC2E500CD50C6 /* FirstViewController.m */; };
-		33611655215CC2E500CD50C6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33611654215CC2E500CD50C6 /* SecondViewController.m */; };
+		33611655215CC2E500CD50C6 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33611654215CC2E500CD50C6 /* LoginViewController.m */; };
 		33611658215CC2E600CD50C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33611656215CC2E600CD50C6 /* Main.storyboard */; };
 		3361165A215CC2E700CD50C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33611659215CC2E700CD50C6 /* Assets.xcassets */; };
 		3361165D215CC2E700CD50C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3361165B215CC2E700CD50C6 /* LaunchScreen.storyboard */; };
@@ -24,10 +24,10 @@
 		33F4598E215CE7A40048BC46 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4598D215CE7A40048BC46 /* libAFNetworking.a */; };
 		33F45990215CE7A40048BC46 /* libJSONModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F4598F215CE7A40048BC46 /* libJSONModel.a */; };
 		33F45992215CE7A40048BC46 /* libMasonry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45991215CE7A40048BC46 /* libMasonry.a */; };
-		33F45994215CE7A40048BC46 /* libPods-SkyPixel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45993215CE7A40048BC46 /* libPods-SkyPixel.a */; };
 		33F45996215CE7A40048BC46 /* libReactiveObjC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45995215CE7A40048BC46 /* libReactiveObjC.a */; };
 		33F45998215CE7A40048BC46 /* libSVProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45997215CE7A40048BC46 /* libSVProgressHUD.a */; };
 		6E715378BA3B78F063D009F7 /* libPods-SkyPixel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 810C3DCD23463F5B9E862D0D /* libPods-SkyPixel.a */; };
+		77CF0BA05A5C22189B205503 /* libPods-SkyPixel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F45993215CE7A40048BC46 /* libPods-SkyPixel.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		3361164E215CC2E500CD50C6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		33611650215CC2E500CD50C6 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		33611651215CC2E500CD50C6 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		33611653215CC2E500CD50C6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		33611654215CC2E500CD50C6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		33611653215CC2E500CD50C6 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		33611654215CC2E500CD50C6 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		33611657215CC2E600CD50C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		33611659215CC2E700CD50C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3361165C215CC2E700CD50C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -83,6 +83,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E715378BA3B78F063D009F7 /* libPods-SkyPixel.a in Frameworks */,
+				77CF0BA05A5C22189B205503 /* libPods-SkyPixel.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +94,6 @@
 				33F4598E215CE7A40048BC46 /* libAFNetworking.a in Frameworks */,
 				33F45990215CE7A40048BC46 /* libJSONModel.a in Frameworks */,
 				33F45992215CE7A40048BC46 /* libMasonry.a in Frameworks */,
-				33F45994215CE7A40048BC46 /* libPods-SkyPixel.a in Frameworks */,
 				33F45996215CE7A40048BC46 /* libReactiveObjC.a in Frameworks */,
 				33F45998215CE7A40048BC46 /* libSVProgressHUD.a in Frameworks */,
 			);
@@ -140,8 +140,8 @@
 				3361164E215CC2E500CD50C6 /* AppDelegate.m */,
 				33611650215CC2E500CD50C6 /* FirstViewController.h */,
 				33611651215CC2E500CD50C6 /* FirstViewController.m */,
-				33611653215CC2E500CD50C6 /* SecondViewController.h */,
-				33611654215CC2E500CD50C6 /* SecondViewController.m */,
+				33611653215CC2E500CD50C6 /* LoginViewController.h */,
+				33611654215CC2E500CD50C6 /* LoginViewController.m */,
 				33611656215CC2E600CD50C6 /* Main.storyboard */,
 				33F45987215CDD820048BC46 /* a.png */,
 				33611659215CC2E700CD50C6 /* Assets.xcassets */,
@@ -210,6 +210,7 @@
 				33611647215CC2E500CD50C6 /* Frameworks */,
 				33611648215CC2E500CD50C6 /* Resources */,
 				48D026BBC36FF899D6A351C5 /* [CP] Copy Pods Resources */,
+				6C81BA12332B6B29852134AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +316,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyPixel/Pods-SkyPixel-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6C81BA12332B6B29852134AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyPixel/Pods-SkyPixel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C81A41325971964521A88B7B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,7 +358,7 @@
 			files = (
 				33F4598C215CE2590048BC46 /* AFHTTPSessionManager+RACSupport.m in Sources */,
 				33F45971215CCB840048BC46 /* SignupViewModel.m in Sources */,
-				33611655215CC2E500CD50C6 /* SecondViewController.m in Sources */,
+				33611655215CC2E500CD50C6 /* LoginViewController.m in Sources */,
 				3361164F215CC2E500CD50C6 /* AppDelegate.m in Sources */,
 				33611660215CC2E700CD50C6 /* main.m in Sources */,
 				33F45974215CCB910048BC46 /* LoginViewModel.m in Sources */,
