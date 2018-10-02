@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		908B9EB6CBCED02F38C34EC8 /* libPods-BirdEye.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7372C44AD6D8D90B5E4D6431 /* libPods-BirdEye.a */; };
+		BC1A4CF12160FF5F00DEA751 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4CF02160FF5F00DEA751 /* AppDelegate.m */; };
+		BC1A4CF42160FF5F00DEA751 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4CF32160FF5F00DEA751 /* FirstViewController.m */; };
+		BC1A4CF72160FF5F00DEA751 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4CF62160FF5F00DEA751 /* SecondViewController.m */; };
+		BC1A4CFA2160FF5F00DEA751 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1A4CF82160FF5F00DEA751 /* Main.storyboard */; };
+		BC1A4CFC2160FF6100DEA751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC1A4CFB2160FF6100DEA751 /* Assets.xcassets */; };
+		BC1A4CFF2160FF6100DEA751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC1A4CFD2160FF6100DEA751 /* LaunchScreen.storyboard */; };
+		BC1A4D022160FF6100DEA751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D012160FF6100DEA751 /* main.m */; };
+		BC1A4D0C2160FF6100DEA751 /* BirdEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D0B2160FF6100DEA751 /* BirdEyeTests.m */; };
+		BC1A4D172160FF6100DEA751 /* BirdEyeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D162160FF6100DEA751 /* BirdEyeUITests.m */; };
+		BC1A4D282161002E00DEA751 /* AccountViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D272161002E00DEA751 /* AccountViewModel.m */; };
+		BC1A4D2B2161008000DEA751 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D2A2161008000DEA751 /* ViewModel.m */; };
+		BC1A4D2F2161019400DEA751 /* AFHTTPSessionManager+RACSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D2E2161019400DEA751 /* AFHTTPSessionManager+RACSupport.m */; };
+		BC1A4D3121611BCA00DEA751 /* loginBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BC1A4D3021611BCA00DEA751 /* loginBackground.jpg */; };
+		BC1A4D3421611C3F00DEA751 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D3321611C3F00DEA751 /* LoginViewController.m */; };
+		BC1A4D3721625C5500DEA751 /* UpdateProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D3621625C5500DEA751 /* UpdateProfileViewController.m */; };
+		BC1A4D3A2162608A00DEA751 /* CountryPickupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D392162608A00DEA751 /* CountryPickupViewController.m */; };
+		BC1A4D3D216260B200DEA751 /* CountryViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1A4D3C216260B200DEA751 /* CountryViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC1A4D082160FF6100DEA751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC1A4CE42160FF5F00DEA751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC1A4CEB2160FF5F00DEA751;
+			remoteInfo = BirdEye;
+		};
+		BC1A4D132160FF6100DEA751 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC1A4CE42160FF5F00DEA751 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC1A4CEB2160FF5F00DEA751;
+			remoteInfo = BirdEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		050804723719A8A0C9345B1E /* Pods-BirdEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdEye.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BirdEye/Pods-BirdEye.debug.xcconfig"; sourceTree = "<group>"; };
+		7372C44AD6D8D90B5E4D6431 /* libPods-BirdEye.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BirdEye.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1A4CEC2160FF5F00DEA751 /* BirdEye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdEye.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1A4CEF2160FF5F00DEA751 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC1A4CF02160FF5F00DEA751 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC1A4CF22160FF5F00DEA751 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		BC1A4CF32160FF5F00DEA751 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		BC1A4CF52160FF5F00DEA751 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		BC1A4CF62160FF5F00DEA751 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		BC1A4CF92160FF5F00DEA751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC1A4CFB2160FF6100DEA751 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC1A4CFE2160FF6100DEA751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC1A4D002160FF6100DEA751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1A4D012160FF6100DEA751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC1A4D072160FF6100DEA751 /* BirdEyeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdEyeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1A4D0B2160FF6100DEA751 /* BirdEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdEyeTests.m; sourceTree = "<group>"; };
+		BC1A4D0D2160FF6100DEA751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1A4D122160FF6100DEA751 /* BirdEyeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BirdEyeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC1A4D162160FF6100DEA751 /* BirdEyeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BirdEyeUITests.m; sourceTree = "<group>"; };
+		BC1A4D182160FF6100DEA751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC1A4D262161002E00DEA751 /* AccountViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountViewModel.h; sourceTree = "<group>"; };
+		BC1A4D272161002E00DEA751 /* AccountViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccountViewModel.m; sourceTree = "<group>"; };
+		BC1A4D292161008000DEA751 /* ViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		BC1A4D2A2161008000DEA751 /* ViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		BC1A4D2D2161019400DEA751 /* AFHTTPSessionManager+RACSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFHTTPSessionManager+RACSupport.h"; sourceTree = "<group>"; };
+		BC1A4D2E2161019400DEA751 /* AFHTTPSessionManager+RACSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AFHTTPSessionManager+RACSupport.m"; sourceTree = "<group>"; };
+		BC1A4D3021611BCA00DEA751 /* loginBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = loginBackground.jpg; sourceTree = "<group>"; };
+		BC1A4D3221611C3F00DEA751 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BC1A4D3321611C3F00DEA751 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BC1A4D3521625C5500DEA751 /* UpdateProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpdateProfileViewController.h; sourceTree = "<group>"; };
+		BC1A4D3621625C5500DEA751 /* UpdateProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpdateProfileViewController.m; sourceTree = "<group>"; };
+		BC1A4D382162608A00DEA751 /* CountryPickupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryPickupViewController.h; sourceTree = "<group>"; };
+		BC1A4D392162608A00DEA751 /* CountryPickupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryPickupViewController.m; sourceTree = "<group>"; };
+		BC1A4D3B216260B200DEA751 /* CountryViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryViewModel.h; sourceTree = "<group>"; };
+		BC1A4D3C216260B200DEA751 /* CountryViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryViewModel.m; sourceTree = "<group>"; };
+		E4C5BDB44BEB93F6FBBA844F /* Pods-BirdEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdEye.release.xcconfig"; path = "Pods/Target Support Files/Pods-BirdEye/Pods-BirdEye.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC1A4CE92160FF5F00DEA751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				908B9EB6CBCED02F38C34EC8 /* libPods-BirdEye.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1A4D042160FF6100DEA751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1A4D0F2160FF6100DEA751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79DD7167904A9A97F1C3E1BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				050804723719A8A0C9345B1E /* Pods-BirdEye.debug.xcconfig */,
+				E4C5BDB44BEB93F6FBBA844F /* Pods-BirdEye.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AEDFCC01AD5D3E8D8647D560 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7372C44AD6D8D90B5E4D6431 /* libPods-BirdEye.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC1A4CE32160FF5F00DEA751 = {
+			isa = PBXGroup;
+			children = (
+				BC1A4CEE2160FF5F00DEA751 /* BirdEye */,
+				BC1A4D0A2160FF6100DEA751 /* BirdEyeTests */,
+				BC1A4D152160FF6100DEA751 /* BirdEyeUITests */,
+				BC1A4CED2160FF5F00DEA751 /* Products */,
+				79DD7167904A9A97F1C3E1BE /* Pods */,
+				AEDFCC01AD5D3E8D8647D560 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC1A4CED2160FF5F00DEA751 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4CEC2160FF5F00DEA751 /* BirdEye.app */,
+				BC1A4D072160FF6100DEA751 /* BirdEyeTests.xctest */,
+				BC1A4D122160FF6100DEA751 /* BirdEyeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC1A4CEE2160FF5F00DEA751 /* BirdEye */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4D2C2161015A00DEA751 /* Networking */,
+				BC1A4D252161001500DEA751 /* ViewModel */,
+				BC1A4D242160FFD000DEA751 /* ViewControllers */,
+				BC1A4CEF2160FF5F00DEA751 /* AppDelegate.h */,
+				BC1A4CF02160FF5F00DEA751 /* AppDelegate.m */,
+				BC1A4CF22160FF5F00DEA751 /* FirstViewController.h */,
+				BC1A4CF32160FF5F00DEA751 /* FirstViewController.m */,
+				BC1A4CF52160FF5F00DEA751 /* SecondViewController.h */,
+				BC1A4CF62160FF5F00DEA751 /* SecondViewController.m */,
+				BC1A4CF82160FF5F00DEA751 /* Main.storyboard */,
+				BC1A4CFB2160FF6100DEA751 /* Assets.xcassets */,
+				BC1A4D3021611BCA00DEA751 /* loginBackground.jpg */,
+				BC1A4CFD2160FF6100DEA751 /* LaunchScreen.storyboard */,
+				BC1A4D002160FF6100DEA751 /* Info.plist */,
+				BC1A4D012160FF6100DEA751 /* main.m */,
+			);
+			path = BirdEye;
+			sourceTree = "<group>";
+		};
+		BC1A4D0A2160FF6100DEA751 /* BirdEyeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4D0B2160FF6100DEA751 /* BirdEyeTests.m */,
+				BC1A4D0D2160FF6100DEA751 /* Info.plist */,
+			);
+			path = BirdEyeTests;
+			sourceTree = "<group>";
+		};
+		BC1A4D152160FF6100DEA751 /* BirdEyeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4D162160FF6100DEA751 /* BirdEyeUITests.m */,
+				BC1A4D182160FF6100DEA751 /* Info.plist */,
+			);
+			path = BirdEyeUITests;
+			sourceTree = "<group>";
+		};
+		BC1A4D242160FFD000DEA751 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4D3221611C3F00DEA751 /* LoginViewController.h */,
+				BC1A4D3321611C3F00DEA751 /* LoginViewController.m */,
+				BC1A4D3521625C5500DEA751 /* UpdateProfileViewController.h */,
+				BC1A4D3621625C5500DEA751 /* UpdateProfileViewController.m */,
+				BC1A4D382162608A00DEA751 /* CountryPickupViewController.h */,
+				BC1A4D392162608A00DEA751 /* CountryPickupViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BC1A4D252161001500DEA751 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4D262161002E00DEA751 /* AccountViewModel.h */,
+				BC1A4D272161002E00DEA751 /* AccountViewModel.m */,
+				BC1A4D292161008000DEA751 /* ViewModel.h */,
+				BC1A4D2A2161008000DEA751 /* ViewModel.m */,
+				BC1A4D3B216260B200DEA751 /* CountryViewModel.h */,
+				BC1A4D3C216260B200DEA751 /* CountryViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BC1A4D2C2161015A00DEA751 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A4D2D2161019400DEA751 /* AFHTTPSessionManager+RACSupport.h */,
+				BC1A4D2E2161019400DEA751 /* AFHTTPSessionManager+RACSupport.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC1A4CEB2160FF5F00DEA751 /* BirdEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1A4D1B2160FF6100DEA751 /* Build configuration list for PBXNativeTarget "BirdEye" */;
+			buildPhases = (
+				63C9C24D3BC7DCD789D7C0E3 /* [CP] Check Pods Manifest.lock */,
+				BC1A4CE82160FF5F00DEA751 /* Sources */,
+				BC1A4CE92160FF5F00DEA751 /* Frameworks */,
+				BC1A4CEA2160FF5F00DEA751 /* Resources */,
+				3816308702FCA7D298CA65B5 /* [CP] Embed Pods Frameworks */,
+				6B3DB30DB16C5E2D57CE0655 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdEye;
+			productName = BirdEye;
+			productReference = BC1A4CEC2160FF5F00DEA751 /* BirdEye.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC1A4D062160FF6100DEA751 /* BirdEyeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1A4D1E2160FF6100DEA751 /* Build configuration list for PBXNativeTarget "BirdEyeTests" */;
+			buildPhases = (
+				BC1A4D032160FF6100DEA751 /* Sources */,
+				BC1A4D042160FF6100DEA751 /* Frameworks */,
+				BC1A4D052160FF6100DEA751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC1A4D092160FF6100DEA751 /* PBXTargetDependency */,
+			);
+			name = BirdEyeTests;
+			productName = BirdEyeTests;
+			productReference = BC1A4D072160FF6100DEA751 /* BirdEyeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC1A4D112160FF6100DEA751 /* BirdEyeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC1A4D212160FF6100DEA751 /* Build configuration list for PBXNativeTarget "BirdEyeUITests" */;
+			buildPhases = (
+				BC1A4D0E2160FF6100DEA751 /* Sources */,
+				BC1A4D0F2160FF6100DEA751 /* Frameworks */,
+				BC1A4D102160FF6100DEA751 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC1A4D142160FF6100DEA751 /* PBXTargetDependency */,
+			);
+			name = BirdEyeUITests;
+			productName = BirdEyeUITests;
+			productReference = BC1A4D122160FF6100DEA751 /* BirdEyeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC1A4CE42160FF5F00DEA751 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Xiangwei.Work;
+				TargetAttributes = {
+					BC1A4CEB2160FF5F00DEA751 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					BC1A4D062160FF6100DEA751 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BC1A4CEB2160FF5F00DEA751;
+					};
+					BC1A4D112160FF6100DEA751 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = BC1A4CEB2160FF5F00DEA751;
+					};
+				};
+			};
+			buildConfigurationList = BC1A4CE72160FF5F00DEA751 /* Build configuration list for PBXProject "BirdEye" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC1A4CE32160FF5F00DEA751;
+			productRefGroup = BC1A4CED2160FF5F00DEA751 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC1A4CEB2160FF5F00DEA751 /* BirdEye */,
+				BC1A4D062160FF6100DEA751 /* BirdEyeTests */,
+				BC1A4D112160FF6100DEA751 /* BirdEyeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC1A4CEA2160FF5F00DEA751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1A4CFF2160FF6100DEA751 /* LaunchScreen.storyboard in Resources */,
+				BC1A4CFC2160FF6100DEA751 /* Assets.xcassets in Resources */,
+				BC1A4CFA2160FF5F00DEA751 /* Main.storyboard in Resources */,
+				BC1A4D3121611BCA00DEA751 /* loginBackground.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1A4D052160FF6100DEA751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1A4D102160FF6100DEA751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3816308702FCA7D298CA65B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BirdEye/Pods-BirdEye-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63C9C24D3BC7DCD789D7C0E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BirdEye-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B3DB30DB16C5E2D57CE0655 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BirdEye/Pods-BirdEye-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BirdEye/Pods-BirdEye-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC1A4CE82160FF5F00DEA751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1A4D3421611C3F00DEA751 /* LoginViewController.m in Sources */,
+				BC1A4D2B2161008000DEA751 /* ViewModel.m in Sources */,
+				BC1A4CF72160FF5F00DEA751 /* SecondViewController.m in Sources */,
+				BC1A4D3D216260B200DEA751 /* CountryViewModel.m in Sources */,
+				BC1A4CF12160FF5F00DEA751 /* AppDelegate.m in Sources */,
+				BC1A4D022160FF6100DEA751 /* main.m in Sources */,
+				BC1A4D3A2162608A00DEA751 /* CountryPickupViewController.m in Sources */,
+				BC1A4D2F2161019400DEA751 /* AFHTTPSessionManager+RACSupport.m in Sources */,
+				BC1A4D282161002E00DEA751 /* AccountViewModel.m in Sources */,
+				BC1A4CF42160FF5F00DEA751 /* FirstViewController.m in Sources */,
+				BC1A4D3721625C5500DEA751 /* UpdateProfileViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1A4D032160FF6100DEA751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1A4D0C2160FF6100DEA751 /* BirdEyeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC1A4D0E2160FF6100DEA751 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC1A4D172160FF6100DEA751 /* BirdEyeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC1A4D092160FF6100DEA751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC1A4CEB2160FF5F00DEA751 /* BirdEye */;
+			targetProxy = BC1A4D082160FF6100DEA751 /* PBXContainerItemProxy */;
+		};
+		BC1A4D142160FF6100DEA751 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC1A4CEB2160FF5F00DEA751 /* BirdEye */;
+			targetProxy = BC1A4D132160FF6100DEA751 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC1A4CF82160FF5F00DEA751 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC1A4CF92160FF5F00DEA751 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC1A4CFD2160FF6100DEA751 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC1A4CFE2160FF6100DEA751 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC1A4D192160FF6100DEA751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC1A4D1A2160FF6100DEA751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC1A4D1C2160FF6100DEA751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050804723719A8A0C9345B1E /* Pods-BirdEye.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = BirdEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.BirdEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC1A4D1D2160FF6100DEA751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C5BDB44BEB93F6FBBA844F /* Pods-BirdEye.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = BirdEye/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.BirdEye;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC1A4D1F2160FF6100DEA751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = BirdEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.BirdEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdEye.app/BirdEye";
+			};
+			name = Debug;
+		};
+		BC1A4D202160FF6100DEA751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = BirdEyeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.BirdEyeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BirdEye.app/BirdEye";
+			};
+			name = Release;
+		};
+		BC1A4D222160FF6100DEA751 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = BirdEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.BirdEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdEye;
+			};
+			name = Debug;
+		};
+		BC1A4D232160FF6100DEA751 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S78RUL88S5;
+				INFOPLIST_FILE = BirdEyeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.xiang.BirdEyeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BirdEye;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC1A4CE72160FF5F00DEA751 /* Build configuration list for PBXProject "BirdEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1A4D192160FF6100DEA751 /* Debug */,
+				BC1A4D1A2160FF6100DEA751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1A4D1B2160FF6100DEA751 /* Build configuration list for PBXNativeTarget "BirdEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1A4D1C2160FF6100DEA751 /* Debug */,
+				BC1A4D1D2160FF6100DEA751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1A4D1E2160FF6100DEA751 /* Build configuration list for PBXNativeTarget "BirdEyeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1A4D1F2160FF6100DEA751 /* Debug */,
+				BC1A4D202160FF6100DEA751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC1A4D212160FF6100DEA751 /* Build configuration list for PBXNativeTarget "BirdEyeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC1A4D222160FF6100DEA751 /* Debug */,
+				BC1A4D232160FF6100DEA751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC1A4CE42160FF5F00DEA751 /* Project object */;
+}
